@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//--------------------------------------------------------------------------------------------------
+def androidSupportVersion = '25.1.1'
+//--------------------------------------------------------------------------------------------------
+def daggerVersion = '2.10'
+def androidAnnotationVersion = '4.2.0'
+def picassoVersion = '2.5.2'
+def gsonVersion = '2.2.+'
+def retrofitVersion = '2.2.0'
+
+def swipeLayoutVersion = '1.2.0@aar'
+def calligraphyVersion = '2.2.0'
+//--------------------------------------------------------------------------------------------------
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+
+    //Android Support Libraries
+    compile "org.androidannotations:androidannotations-api:$androidAnnotationVersion"
+    compile "org.androidannotations:androidannotations:$androidAnnotationVersion"
+    compile "com.android.support:recyclerview-v7:$androidSupportVersion"
+    compile "com.android.support:cardview-v7:$androidSupportVersion"
+    compile "com.android.support:design:$androidSupportVersion"
+    compile "com.android.support:support-v4:$androidSupportVersion"
+
+    //retrofit
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    //gson
+    compile "com.google.code.gson:gson:$gsonVersion"
+
+    //dragger
+    compile "com.google.dagger:dagger:$daggerVersion"
+    compile "com.google.dagger:dagger-android:$daggerVersion"
+
+    //picasso
+    compile "com.squareup.picasso:picasso:$picassoVersion"
+
+    //Swipe layout
+    compile "com.daimajia.swipelayout:library:$swipeLayoutVersion"
+
+    //Fonts
+    compile "uk.co.chrisjenx:calligraphy:$calligraphyVersion"
+}
