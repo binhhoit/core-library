@@ -2,12 +2,12 @@
 ## Gradle Project<br />
 ![image](https://cloud.githubusercontent.com/assets/18477507/26244640/be1f9534-3cba-11e7-8c5a-dbb65291f11b.png) <br />
 ### Code:<br />
-<code>allprojects {</code><br />
-<code>repositories {</code><br />
-<code>jcenter()</code><br />
-<code>maven { url 'https://jitpack.io' }</code><br />
-<code>}</code><br />
-<code>}</code><br />
+<code>allprojects {<br />
+repositories {<br />
+jcenter()<br />
+maven { url 'https://jitpack.io' }<br />
+}<br />
+}</code><br />
 
 ----------------------------------------------------------------------------------------------------------------------------
 ## Gradle App<br />
