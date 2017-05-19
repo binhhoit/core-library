@@ -1,4 +1,4 @@
-# core-library
+# core-library      version:0.1.0
 ### Gradle Project<br />
 ![image](https://cloud.githubusercontent.com/assets/18477507/26244640/be1f9534-3cba-11e7-8c5a-dbb65291f11b.png) <br />
 ### Code:
@@ -10,7 +10,6 @@ allprojects {
     }
 }
 ```
-
 ----------------------------------------------------------------------------------------------------------------------------
 ### Gradle App<br />
 ![image](https://cloud.githubusercontent.com/assets/18477507/26244594/82bb8fd4-3cba-11e7-824f-e70a8ca7847d.png) <br />
