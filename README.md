@@ -1,8 +1,20 @@
 # core-library      version:0.1.0
 ### Gradle Project<br />
-![image](https://cloud.githubusercontent.com/assets/18477507/26244640/be1f9534-3cba-11e7-8c5a-dbb65291f11b.png)
+![image](https://cloud.githubusercontent.com/assets/18477507/26273358/08971f76-3d59-11e7-9dbf-9ce2dc0a014b.png)
 ### Code:
 ```java
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
 allprojects {
     repositories {
         jcenter()
